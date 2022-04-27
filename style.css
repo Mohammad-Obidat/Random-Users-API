@@ -1,0 +1,42 @@
+#container {
+  display: grid;
+  width: 100%;
+  height: auto;
+  background-color: #fffbe7;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: 1px 1px 3px #0a1612;
+  margin: 7px;
+  padding: 5px;
+  justify-content: end;
+}
+
+#container :hover {
+  background-color: #e78ea9;
+}
+
+.info {
+  height: 10vh;
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 1px 1px 3px #0a1612;
+  background-color: #40dfef;
+}
+
+.name {
+  margin: 10px 0;
+}
+
+.email {
+  text-decoration: underline;
+  text-decoration-color: darkblue;
+}
+
+@media screen and (max-width: 1024px) {
+  #container {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    display: grid;
+  }
+}
